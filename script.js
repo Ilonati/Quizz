@@ -1,32 +1,37 @@
-document.getElementById("signup-form").addEventListener("submit", async function (e) {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('loginForm');
 
-    const data = {
-        username: document.getElementById("username").value,
-        prenom: document.getElementById("prenom").value,
-        nom: document.getElementById("nom").value,
-        email: document.getElementById("email").value,
-        mot_de_passe: document.getElementById("mot_de_passe").value,
-    };
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-    try {
-        const response = await fetch("http://localhost:3000/api/register", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-        });
+        const formData = {
+            username: form.username.value.trim(),
+            email: form.email.value.trim(),
+            password: form.password.value.trim(),
+        };
 
-        const result = await response.json();
+        try {
+            const response = await fetch('https://example.com/api/login', { // ⬅️ здесь замени URL на свой сервер
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
 
-        if (result.success) {
-            alert("Bienvenue " + data.prenom + " !");
-            window.location.href = "quiz.html";
-        } else {
-            alert("Erreur : " + result.error);
+            const result = await response.json();
+
+            if (response.ok) {
+                alert('Connexion réussie ✅');
+                // редирект, если надо:
+                // window.location.href = '/dashboard.html';
+            } else {
+                alert('Erreur : ' + (result.message || 'Connexion échouée.'));
+            }
+
+        } catch (error) {
+            console.error('Erreur de connexion:', error);
+            alert('Une erreur est survenue lors de la connexion.');
         }
-    } catch (err) {
-        alert("Échec de la connexion au serveur.");
-    }
+    });
 });
