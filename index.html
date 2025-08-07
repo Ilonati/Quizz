@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnexionFLE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ConnexionFLE</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1 class="title">Français Langue étrangère</h1>
+        <h2 class="subtitle">FLE</h2>
+      </header>
 
-    <body>
-        <main class="container">
-            <header>
-                <h1 class="title">Français Langue étrangère</h1>
-                <h2 class="subtitle">FLE</h2>
-            </header>
+      <section class="login-card" aria-label="Formulaire de connexion">
+        <h3 class="login-title">Nouvelle connection</h3>
 
-            <section class="login-card" aria-label="Formulaire de connexion">
-                <h3 class="login-title">Nouvelle connection</h3>
+        <form class="login-form" id="loginForm">
+          <input
+            type="text"
+            name="username"
+            placeholder="Pseudonyme"
+            aria-label="Nom d'utilisateur"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            aria-label="Email"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Mot de passe"
+            aria-label="Mot de passe"
+            required
+          />
 
-                <form class="login-form" id="loginForm">
-                    <input type="text" name="username" placeholder="Pseudonyme" aria-label="Nom d'utilisateur"
-                        required />
-                    <input type="email" name="email" placeholder="Email" aria-label="Email" required />
-                    <input type="password" name="password" placeholder="Mot de passe" aria-label="Mot de passe"
-                        required />
+          <button type="submit">Connecte</button>
+        </form>
 
-                    <button type="submit">Connecte</button>
-
-                </form>
-
-                <a href="inscrire.html" class="signup-link">S’inscrire</a>
-            </section>
-        </main>
-        <footer id="footer">
-            <div class="footer-bubbles">
-                <div class="bubbles">
-                    <span style="--i:1;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:3;"></span>
-                    <span style="--i:4;"></span>
-                    <span style="--i:5;"></span>
-                </div>
-                <p>&copy; 2025 Français Langue étrangère – Tous droits réservés</p>
-            </div>
-        </footer>
-    </body>
-
+        <a href="inscrire.html" class="signup-link">S’inscrire</a>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-bubbles">
+        <div class="bubbles">
+          <span style="--i: 1"></span>
+          <span style="--i: 2"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 4"></span>
+          <span style="--i: 5"></span>
+        </div>
+        <p>&copy; 2025 Français Langue étrangère – Tous droits réservés</p>
+      </div>
+      <button id="fetchOnClick">Fetch button</button>
+    </footer>
+  </body>
 </html>
