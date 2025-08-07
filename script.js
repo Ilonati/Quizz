@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('loginForm');
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("loginForm");
 
-    form.addEventListener('submit', async (e) => {
+    form.addEventListener("submit", async (e) => {
         e.preventDefault();
 
         const formData = {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
-            const response = await fetch('https://example.com/api/login', {
+            const response = await fetch('https://example.com/api/login', { // ⬅️ здесь замени URL на свой сервер
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (response.ok) {
                 alert('Connexion réussie ✅');
-
+                // редирект, если надо:
+                // window.location.href = '/dashboard.html';
             } else {
                 alert('Erreur : ' + (result.message || 'Connexion échouée.'));
             }
