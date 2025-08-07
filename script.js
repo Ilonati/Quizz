@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         try {
-            const response = await fetch('https://example.com/api/login', { // ⬅️ здесь замени URL на свой сервер
+            const response = await fetch('https://example.com/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (response.ok) {
                 alert('Connexion réussie ✅');
-                // редирект, если надо:
-                // window.location.href = '/dashboard.html';
+
             } else {
                 alert('Erreur : ' + (result.message || 'Connexion échouée.'));
             }
