@@ -10,25 +10,31 @@
     </head>
 
     <body>
-        <div class="quiz-container">
-            <h2>Créer une question</h2>
+        <div class="page-wrapper">
+            <class class="container">
+                <h1 class="title">Français Langues étrangère</h1>
+                <h2 class="subtitle">FLE</h2>
+                <div class="quiz-container">
+                    <h2>Créer une question</h2>
 
-            <form id="quiz-form">
-                <input type="text" name="question" id="question-input" placeholder="Ajouter le texte des questions"
-                    required />
+                    <form id="quiz-form">
+                        <input type="text" name="question" id="question-input"
+                            placeholder="Ajouter le texte des questions" required />
 
-                <div id="answers-container">
+                        <div id="answers-container">
 
+                        </div>
+
+                        <button type="button" id="add-answer" class="btn add-answer">
+                            ➕ Ajouter une réponse
+                        </button>
+
+                        <button type="submit" class="btn submit">
+                            ✅ Envoyer
+                        </button>
+                    </form>
                 </div>
-
-                <button type="button" id="add-answer" class="btn add-answer">
-                    ➕ Ajouter une réponse
-                </button>
-
-                <button type="submit" class="btn submit">
-                    ✅ Envoyer
-                </button>
-            </form>
+            </class>
         </div>
         <footer id="footer">
             <div class="footer-bubbles">
@@ -44,6 +50,7 @@
         </footer>
 
         <script src="quiz.js"></script>
+
     </body>
 
 </html>

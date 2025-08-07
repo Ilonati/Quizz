@@ -1,29 +1,50 @@
 html,
 body {
     height: 100%;
-    margin: 0;
-    padding: 0;
     background-color: #ffe17b;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
+.title {
+    font-size: 40px;
+    color: #5a2ccf;
+    margin-top: 50px;
+    text-shadow: 5px 5px 5px #fbf2f2;
 
-/* body {
-    background-color: #ffe17b;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    margin: 0;
-} */
+
+}
+
+.subtitle {
+    font-size: 48px;
+    color: #ff5ca4;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px #fbf2f2;
+}
 
 .quiz-container {
-    margin-top: 50px;
+    /* margin-top: 50px;
     margin-left: 50px;
-    margin-right: 50px;
-
-    background: #fff3c0;
+    margin-right: 50px; */
+    /* box-sizing: border-box; */
     padding: 20px;
+    background: #fff3c0;
+
     border-radius: 15px;
     width: 100%;
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
@@ -38,8 +59,9 @@ body {
 }
 
 input[type="text"] {
-    width: 96%;
+    width: 95%;
     padding: 10px;
+    padding-right: 10px;
     margin-bottom: 6px;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -55,7 +77,7 @@ input.incorrect {
 }
 
 .btn {
-    width: 100%;
+    width: 50%;
     padding: 12px;
     font-size: 16px;
     border: none;
@@ -133,21 +155,14 @@ input.incorrect {
     width: 100%;
     margin-top: 30px;
     background: #f5f5f5;
-    padding: 40px 10px 60px;
+    /* padding: 10px 10px 10px; */
     text-align: center;
     font-size: 16px;
     position: relative;
     overflow: hidden;
 }
 
-/* .footer-bubbles {
-    position: relative;
-    background: #f5f5f5;
-    text-align: center;
-    padding: 40px 10px 60px;
-    overflow: hidden;
-    font-size: 16px;
-} */
+
 
 .footer-bubbles p {
     margin-top: 20px;
