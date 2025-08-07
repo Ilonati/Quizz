@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Créer une question de quiz</title>
+        <link rel="stylesheet" href="quiz.css" />
+
+
+    </head>
+
+    <body>
+        <div class="quiz-container">
+            <h2>Créer une question</h2>
+
+            <form id="quiz-form">
+                <input type="text" name="question" id="question-input" placeholder="Ajouter le texte des questions"
+                    required />
+
+                <div id="answers-container">
+
+                </div>
+
+                <button type="button" id="add-answer" class="btn add-answer">
+                    ➕ Ajouter une réponse
+                </button>
+
+                <button type="submit" class="btn submit">
+                    ✅ Envoyer
+                </button>
+            </form>
+        </div>
+        <footer id="footer">
+            <div class="footer-bubbles">
+                <div class="bubbles">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                    <span style="--i:4;"></span>
+                    <span style="--i:5;"></span>
+                </div>
+                <p>&copy; 2025 MonQuizFLE – Tous droits réservés</p>
+            </div>
+        </footer>
+
+        <script src="quiz.js"></script>
+    </body>
+
+</html>

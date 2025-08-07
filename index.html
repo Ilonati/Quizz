@@ -2,15 +2,34 @@
 <html lang="fr">
 
     <head>
-        <meta charset="utf-8" />
-        <title></title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <script src="" defer></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FLE - Inscription</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
     </head>
 
     <body>
+        <div class="container">
+            <h1 class="title">Français Langues étrangère</h1>
+            <h2 class="subtitle">FLE</h2>
+
+            <div class="card">
+                <div class="card-header">Bienvenue</div>
+
+                <form id="signup-form">
+                    <input type="text" id="username" placeholder="Pseudonyme" required />
+                    <input type="text" id="prenom" placeholder="Prénom" required />
+                    <input type="text" id="nom" placeholder="Nom" required />
+                    <input type="email" id="email" placeholder="Email" required />
+                    <input type="password" id="mot_de_passe" placeholder="Mot de passe" required />
+
+                    <button type="submit">S'inscrire</button>
+
+                </form>
+            </div>
+        </div>
+
 
     </body>
 
