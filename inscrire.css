@@ -1,4 +1,5 @@
 body {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,6 +128,10 @@ form button:active {
     background-color: green;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+footer {
+    width: 100%;
 }
 
 .footer-bubbles {
