@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <div class="container">
+        <div class="container" aria-labelledby="titre-page">
             <a href="index.html" class="link">
                 <h1 class="title">Français Langue étrangère</h1>
             </a>
@@ -20,7 +20,7 @@
             <div class="card">
                 <div class="card-header" aria-label="Formulaire d'inscription">Bienvenue</div>
 
-                <form id="signup-form">
+                <form id="signup-form" aria-labelledby="form-title">
                     <input type="text" id="username" placeholder="Pseudonyme" aria-label="Pseudonyme" required />
                     <input type="text" id="prenom" placeholder="Prénom" aria-label="Prénom" required />
                     <input type="text" id="nom" placeholder="Nom" aria-label="Nom" required />
@@ -28,7 +28,7 @@
                     <input type="password" id="mot_de_passe" placeholder="Mot de passe" aria-label="Mot de passe"
                         required />
 
-                    <button type="submit">S'inscrire</button>
+                    <button type="submit" aria-label="Valider l'inscription">S'inscrire</button>
 
                 </form>
             </div>
@@ -36,7 +36,7 @@
 
         <footer id="footer">
             <div class="footer-bubbles">
-                <div class="bubbles">
+                <div class="bubbles" aria-hidden="true">
                     <span style="--i:1;"></span>
                     <span style="--i:2;"></span>
                     <span style="--i:3;"></span>

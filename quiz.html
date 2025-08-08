@@ -10,26 +10,26 @@
     </head>
 
     <body>
-        <div class="page-wrapper">
+        <div class="page-wrapper" aria-labelledby="page-title">
             <class class="container">
                 <h1 class="title">Français Langue étrangère</h1>
                 <h2 class="subtitle">FLE</h2>
-                <div class="quiz-container">
+                <div class="quiz-container" aria-labelledby="form-title">
                     <h2>Créer une question</h2>
 
-                    <form id="quiz-form">
+                    <form id="quiz-form" aria-describedby="form-instruction">
                         <input type="text" name="question" id="question-input"
-                            placeholder="Ajouter le texte des questions" required />
+                            placeholder="Ajouter le texte des questions" required aria-required="true" />
 
-                        <div id="answers-container">
+                        <div id="answers-container" aria-live="polite" aria-label="Réponses possibles">
 
                         </div>
 
-                        <button type="button" id="add-answer" class="btn add-answer">
+                        <button type="button" id="add-answer" class="btn add-answer" aria-label="Ajouter une réponse">
                             ➕ Ajouter une réponse
                         </button>
 
-                        <button type="submit" class="btn submit">
+                        <button type="submit" class="btn submit" aria-label="Envoyer la question">
                             ✅ Envoyer
                         </button>
                     </form>
@@ -38,7 +38,7 @@
         </div>
         <footer id="footer">
             <div class="footer-bubbles">
-                <div class="bubbles">
+                <div class="bubbles" aria-hidden="true">
                     <span style="--i:1;"></span>
                     <span style="--i:2;"></span>
                     <span style="--i:3;"></span>
